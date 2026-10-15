@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Railly</title>
+<meta name="theme-color" content="#0b1b3a">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" defer></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+<canvas id="three-bg" aria-hidden="true"></canvas>
+
+<button class="music" id="musicBtn" aria-label="Play or pause music" hidden>Music</button>
+
+<nav class="dots" id="dots" aria-label="Sections"></nav>
+
+<!-- HERO -->
+<section class="hero" id="top" data-title="Begin">
+  <div class="hero-inner">
+    <p class="eyebrow">15 October 2026</p>
+    <h1 class="hero-title"><span>Happy</span> <span>Birthday</span></h1>
+    <div class="rotator" id="rotator" aria-live="polite">
+      <span class="rot-word">My Love</span>
+    </div>
+    <p class="hero-name">Railly Cruz</p>
+    <a href="#begin" class="cue" id="cue"><span>Scroll to open your gift</span><i></i></a>
+  </div>
+</section>
+
+<!-- WHERE IT BEGAN -->
+<section class="sec begin" id="begin" data-title="Little you">
+  <div class="wrap two">
+    <figure class="polaroid reveal from-left tilt-l">
+      <img src="baby.jpg" alt="Railly as a baby wearing a flower headband" loading="lazy">
+      <figcaption>Little Railly</figcaption>
+    </figure>
+    <div class="text reveal from-right">
+      <p class="eyebrow">Where it all began</p>
+      <h2>Once upon a time, a little girl with the sweetest eyes</h2>
+      <p>Long before Litmatch, long before a video call changed everything for me, there was a tiny girl in a flower headband who had no idea she would one day become the happiest thing in my life.</p>
+      <p>Look at that face. Same gentle eyes, same sweet heart. The world got lucky the day you arrived, my love.</p>
+    </div>
+  </div>
+</section>
+
+<!-- OUR STORY -->
+<section class="sec story" id="story" data-title="Our story">
+  <div class="wrap">
+    <p class="eyebrow center reveal">Our story</p>
+    <h2 class="center reveal">From a screen to my whole heart</h2>
+    <ol class="timeline">
+      <li class="reveal from-left"><span class="dot"></span><h3>Litmatch</h3><p>Two strangers, one app, and a hello that I did not know would change my life.</p></li>
+      <li class="reveal from-right"><span class="dot"></span><h3>The first video call</h3><p>One look at your smile and I knew. I fell in love with you in the very first call.</p></li>
+      <li class="reveal from-left"><span class="dot"></span><h3>Our late night talks</h3><p>Every night I sit in our garden park, where so many couples walk by, and I talk to you softly. In my heart, you are always sitting right beside me.</p></li>
+      <li class="reveal from-right"><span class="dot"></span><h3>Girlfriend and boyfriend</h3><p>We are on our way to becoming each other's forever, one sweet day at a time.</p></li>
+      <li class="reveal from-left"><span class="dot big"></span><h3>Today, your birthday</h3><p>15 October 2026. The day the world received my favourite person.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="sec gallery" id="gallery" data-title="Gallery">
+  <div class="wrap">
+    <p class="eyebrow center reveal">Gallery of you</p>
+    <h2 class="center reveal">Every picture is my favourite</h2>
+    <div class="masonry">
+      <figure class="reveal zoomable tilt-r"><img src="portrait1.jpg" alt="Railly looking sideways with long hair" loading="lazy"><figcaption>My cutie</figcaption></figure>
+      <figure class="reveal zoomable tilt-l"><img src="flower.jpg" alt="Railly with a flower hair clip" loading="lazy"><figcaption>My sweety</figcaption></figure>
+      <figure class="reveal zoomable tilt-l"><img src="portrait2.jpg" alt="Railly resting and smiling softly" loading="lazy"><figcaption>My love</figcaption></figure>
+      <figure class="reveal zoomable tilt-r"><img src="portrait3.jpg" alt="Railly smiling with dark hair" loading="lazy"><figcaption>My everything</figcaption></figure>
+      <figure class="reveal zoomable portrait-card"><img src="railly-01.jpg" alt="Railly smiling softly in a close-up portrait" loading="lazy"><figcaption>Your sweetest smile</figcaption></figure>
+      <figure class="reveal zoomable portrait-card"><img src="railly-02.jpg" alt="A cherished childhood photo of Railly" loading="lazy"><figcaption>Little sunshine</figcaption></figure>
+      <figure class="reveal zoomable portrait-card"><img src="railly-03.jpg" alt="Railly with her lovely long hair" loading="lazy"><figcaption>My beautiful girl</figcaption></figure>
+      <figure class="reveal zoomable portrait-card"><img src="railly-04.jpg" alt="Railly wearing a flower hair clip" loading="lazy"><figcaption>Flower-clipped cutie</figcaption></figure>
+      <figure class="reveal zoomable portrait-card"><img src="railly-05.jpg" alt="A gentle, candid portrait of Railly" loading="lazy"><figcaption>My calm, lovely place</figcaption></figure>
+      <figure class="reveal zoomable portrait-card"><img src="railly-06.jpg" alt="Railly in a soft, candid portrait" loading="lazy"><figcaption>My lovely Railly</figcaption></figure>
+      <figure class="reveal zoomable portrait-card"><img src="railly-07.jpg" alt="Railly smiling for a photo" loading="lazy"><figcaption>That smile, always</figcaption></figure>
+      <figure class="reveal zoomable portrait-card"><img src="railly-08.jpg" alt="Railly looking over her shoulder" loading="lazy"><figcaption>My sweet girl</figcaption></figure>
+      <figure class="reveal zoomable portrait-card"><img src="railly-09.jpg" alt="Railly sending a sweet kiss" loading="lazy"><figcaption>A kiss across the miles</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- HER PLACE ON MY PHONE -->
+<section class="sec home-screen" id="home-screen" data-title="My home screen">
+  <div class="wrap home-screen-grid">
+    <figure class="home-screen-photo reveal zoomable" id="homeScreenFrame">
+      <span class="home-screen-sticker" aria-hidden="true">♡ always close ♡</span>
+      <img src="homescreen-wallpaper.jpg" alt="A portrait screenshot of my phone homescreen, with Railly as the wallpaper" loading="lazy">
+      <figcaption>My phone's favorite view 📱💗</figcaption>
+    </figure>
+    <div class="home-screen-copy reveal from-right">
+      <p class="eyebrow">A tiny confession</p>
+      <h2>Why you’re my home screen</h2>
+      <p>Because every time I wake my phone, I get a little hello from my favorite person. The world can wait one second—first, I get to see the girl who feels like home.</p>
+      <p>Even when we’re miles apart, your smile makes my screen brighter and my heart feel closer. You’re my favorite view, my sweetest wallpaper, and the loveliest reason to check my phone. 🥰</p>
+      <span class="orbiting-heart" aria-hidden="true">♥</span>
+    </div>
+  </div>
+</section>
+
+<!-- POEMS -->
+<section class="sec poems" id="poems" data-title="Poems">
+  <div class="wrap">
+    <p class="eyebrow center reveal">Three poems for you</p>
+    <h2 class="center reveal">Words from my heart</h2>
+
+    <article class="poem reveal">
+      <h3>The Girl With the Gentle Heart</h3>
+      <p class="line">Your eyes hold the quiet of a moonlit sea,</p>
+      <p class="line">Soft and deep and kind to me.</p>
+      <p class="line">You carry your goodness without a sound,</p>
+      <p class="line">The sweetest girl I have ever found.</p>
+      <p class="line">Beautiful when you laugh, beautiful when you rest,</p>
+      <p class="line">Railly, you are simply the very best.</p>
+    </article>
+
+    <article class="poem reveal">
+      <h3>Daughter of Two Worlds</h3>
+      <p class="line">A father from Los Angeles, a mother from the Philippine shore,</p>
+      <p class="line">Two beautiful worlds that made you, and I adore.</p>
+      <p class="line">You have walked through Taiwan and Singapore light,</p>
+      <p class="line">Yet to me you shine the brightest every night.</p>
+      <p class="line">Proud Filipina, warm as island sun,</p>
+      <p class="line">With you my story has only just begun.</p>
+    </article>
+
+    <article class="poem reveal">
+      <h3>Moha and His Forever</h3>
+      <p class="line">Under the park lights where lovers softly stroll,</p>
+      <p class="line">I speak your name and you fill my soul.</p>
+      <p class="line">Across the miles our two hearts meet,</p>
+      <p class="line">Every word you send tastes so sweet.</p>
+      <p class="line">One day I hope to call you my wife,</p>
+      <p class="line">And walk beside you for all of life.</p>
+    </article>
+  </div>
+</section>
+
+<!-- LOVES -->
+<section class="sec loves" id="loves" data-title="Her favourites">
+  <div class="wrap">
+    <p class="eyebrow center reveal">Things my love loves</p>
+    <h2 class="center reveal">Little things that make her Railly</h2>
+    <div class="cards">
+      <div class="card blue reveal"><div class="icon" id="iconBlue"></div><h3>The colour blue</h3><p>Calm like the sky, deep like the sea, just like you.</p></div>
+      <div class="card chicken reveal"><div class="icon" id="iconChicken"></div><h3>Jollibee chicken</h3><p>Chickenjoy, the one true love after me. Someday I will bring you a whole bucket.</p></div>
+      <div class="card avocado reveal"><div class="icon" id="iconAvocado"></div><h3>Avocado ice cream</h3><p>Creamy, sweet and green, the flavour of your happiest moments.</p></div>
+      <div class="card roblox reveal"><div class="icon" id="iconRoblox"></div><h3>Playing Roblox</h3><p>The queen of every server. Player one, forever my player two.</p></div>
+      <div class="card travel reveal"><div class="icon" id="iconTravel"></div><h3>Taiwan and Singapore</h3><p>A traveller with an adventurous heart. Next stop, somewhere together.</p></div>
+      <div class="card heritage reveal"><div class="icon" id="iconHeritage"></div><h3>Los Angeles and the Philippines</h3><p>Her father's home and her mother's home, both inside one beautiful girl.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WISH WALL -->
+<section class="sec wishes" id="wishes" data-title="Wishes">
+  <div class="wrap center">
+    <p class="eyebrow reveal">Birthday wishes</p>
+    <h2 class="reveal">A hundred ways to say it</h2>
+    <div class="lanterns" id="lanterns" aria-hidden="true"></div>
+    <button class="btn reveal" id="burst">Celebrate with me</button>
+    <p class="hint reveal">Tap the button and watch the sky light up</p>
+  </div>
+</section>
+
+<!-- CAKE -->
+<section class="sec cakesec" id="cake" data-title="Make a wish">
+  <div class="wrap center">
+    <p class="eyebrow reveal">Your cake</p>
+    <h2 class="reveal" id="cakeTitle">Light the candles</h2>
+    <div class="cake reveal" id="cake" role="button" tabindex="0" aria-label="Tap to light the candles">
+      <div class="candles">
+        <div class="candle"><span class="flame"></span></div>
+        <div class="candle"><span class="flame"></span></div>
+        <div class="candle"><span class="flame"></span></div>
+      </div>
+      <div class="tier t1"></div>
+      <div class="tier t2"></div>
+      <div class="plate"></div>
+    </div>
+    <p class="hint reveal" id="cakeHint">Tap the cake to light the candles</p>
+    <button class="btn ghost" id="blow" hidden>Blow them out and make a wish</button>
+    <p class="wishmsg" id="wishmsg"></p>
+  </div>
+</section>
+
+<!-- LETTER -->
+<section class="sec letter" id="letter" data-title="Letter">
+  <div class="wrap narrow">
+    <div class="paper reveal">
+      <p class="eyebrow">A letter for you</p>
+      <h2>My dearest Railly,</h2>
+      <p>Happy birthday, my love, my cutie, my sweety. I still smile when I remember the first time I saw you on a video call. Something in me simply knew.</p>
+      <p>You are beautiful, kind and loving, and you make ordinary days feel like a gift. When we talk at night and I sit in our garden park watching couples pass by, I do not envy any of them. I only imagine the day you and I will walk there together, hand in hand.</p>
+      <p>I do not know how to measure how much I love you, so I will promise what matters: I will try to love you gently, protect your peace, care for you, respect you, help you, and support the dreams that make you shine. Above all, I will choose honesty and loyalty. Your happiness is one of the most valuable things in my life.</p>
+      <p>I am Indian and you are Filipina, and I think ours is the loveliest combination: two stories, two cultures, one hopeful little “us.” My dream is to grow together with patience, and, if our hearts choose it, to call you my wife one day. For now, I want to ask with all the tenderness I can: will you be my girlfriend?</p>
+      <p>Thank you for being you, my cutie, my sunshine, my sweetest thought. The happiness you bring me is beyond anything I can measure.</p>
+      <p class="sign">Forever yours,<br><strong>Mayur</strong>, your Moha</p>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section class="sec quiz" id="quiz" data-title="Love quiz">
+  <div class="wrap narrow center">
+    <p class="eyebrow reveal">A tiny love quiz</p>
+    <h2 class="reveal">Five little questions for my favorite girl</h2>
+    <div class="quiz-card reveal" id="quizCard" aria-live="polite"></div>
+    <p class="hint">No wrong answers, my love. This is just for smiles. 💗</p>
+  </div>
+</section>
+
+<!-- PROPOSAL -->
+<section class="sec proposal" id="proposal" data-title="My question">
+  <div class="wrap narrow center">
+    <p class="eyebrow reveal">From my heart to yours</p>
+    <h2 class="reveal">One question I have been carrying</h2>
+    <div class="proposal-card reveal">
+      <p>Railly, I am Indian and you are Filipina—and to me, our different worlds make a beautiful combination. I don’t want to rush your heart or decide our future for you. I only want to ask honestly, with all the love I have:</p>
+      <h3>Would you make me the happiest man and be my girlfriend?</h3>
+      <p>And if life keeps bringing us closer, I hope one day I may ask you to be my wife. I will do my best to love you, protect your peace, care for you, respect you, help you, support your dreams, and above all, stay loyal to you. Your happiness is precious to me.</p>
+      <button class="btn" id="yesBtn">Yes, my answer is… 💌</button>
+      <p id="answerMsg" class="answer-msg" aria-live="polite"></p>
+      <p class="hint">Take your time, sweetheart. Your answer is always yours.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FINALE -->
+<section class="sec finale" id="finale" data-title="Finale">
+  <div class="wrap center">
+    <p class="eyebrow reveal">One last thing</p>
+    <h2 class="big reveal">Happy Birthday<br>my love</h2>
+    <p class="reveal">May this year bring you every smile you give to others.</p>
+    <button class="btn reveal bg-gradient-to-r from-pink-300 to-violet-300" id="finalBurst">One more surprise</button>
+    <div class="language-wrap reveal">
+      <p class="hint">A little love, in many languages</p>
+      <button class="btn ghost" id="loveLanguages">Press me, my love 💖</button>
+      <div class="language-list" id="languageList" hidden aria-live="polite"></div>
+      <p class="language-note" id="languageNote"></p>
+    </div>
+    <p class="foot reveal">Made with all my heart by Mayur, for Railly</p>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" hidden><img alt=""><button aria-label="Close">Close</button></div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
+
